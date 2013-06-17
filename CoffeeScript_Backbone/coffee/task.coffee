@@ -5,3 +5,4 @@ class window.Task extends Backbone.Model
 
   complete: ->
     # ========YOUR CODE HERE=========
+    @.destroy()

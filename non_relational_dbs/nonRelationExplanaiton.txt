@@ -1,1 +1,3 @@
-Please delete this and write your explanation ...
+Relational databases are built on relational algebra and use the SQL language.  This structure provides a standardized format for querying and storing data, and is a great set up for structured data.
+
+NoSQL databases came about due to the explosion of the consumer web, and the strains that were placed on databases due to the size, unstructured nature of the data, and to the velocity of the data and pace of change.  NoSQL databases are made up of collections of objects as opposed to tables of rows.  In the case of MongoDB and CouchDB these objects are often JSON data.  The aggregation and querying languages associated with these data bases are different the SQL and structured to accommodate appropriate tasks. 

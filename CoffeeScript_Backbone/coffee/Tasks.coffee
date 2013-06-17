@@ -5,7 +5,9 @@ class window.Tasks extends Backbone.Collection
   tasksRemaining: ->
     # ========YOUR CODE HERE===========
     # should return a number
+    @.without.apply(@, @)
 
   incompleteItems: ->
     # ========YOUR CODE HERE===========
     # should return array or collection of incomplete tasks
+    @.where({complete: false})
