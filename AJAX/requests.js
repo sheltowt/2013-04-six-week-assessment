@@ -17,4 +17,28 @@ var tweet = {
 
 // Write your GET request here
 
+var getRequest = $.ajax({
+  url: url,
+  type: "GET",
+  dataType: "JSON",
+  success: function(data){
+  console.log(data);
+  },
+  error: function(data){
+  console.log(data);
+  }
+});
+
+
 // Write your POST request here
+
+var postRequest = $.ajax({
+  url: url,
+  type: "POST",
+  data: tweet,
+  dataType: "JSON"
+});
+
+postRequest.done(function(data){
+  console.log(data);
+});
