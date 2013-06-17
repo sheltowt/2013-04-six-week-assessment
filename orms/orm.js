@@ -3,18 +3,22 @@ var query = function(string) {
   // as an input, and executes that query on some database
 };
 
+userCount = 0;
+
 var User = function(name, email) {
   this.name = name;
+  this.id = id;
   this.email = email;
+  count++;
 };
 
 User.prototype.constructor = User;
 
-count = 0;
+
 
 User.prototype.save = function() {
   // ========YOUR CODE HERE===========
-  string = "INSERT INTO users (name, id, email) VALUES (" + this.name + "," + String(count) + "," + this.email + ")";
+  string = "INSERT INTO users (name, id, email) VALUES (" + this.name + "," + this.id + "," + this.email + ")";
   query(string);
 };
 

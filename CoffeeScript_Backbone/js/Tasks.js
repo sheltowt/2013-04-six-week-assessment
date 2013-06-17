@@ -15,7 +15,9 @@
     Tasks.prototype.model = Task;
 
     Tasks.prototype.tasksRemaining = function() {
-      return this.without.apply(this, this);
+      return this.where({
+        complete: false
+      }).length;
     };
 
     Tasks.prototype.incompleteItems = function() {

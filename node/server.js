@@ -9,11 +9,11 @@ http.createServer(function (request, response) {
       /*========YOUR CODE HERE=========*/
       if(path === '/hifive'){
         response.writeHead(200,{'Content-Type':'text/html'});
-        response.end(fs.FileSync(__dirname+'/index.html'));
+        response.end(fs.FileSync(__dirname+'assets/hifive.jpg'));
       }
       if(path === '/lowfive'){
         response.writeHead(200,{'Content-Type':'text/html'});
-        response.end(fs.readFileSync(__dirname+'/index.html'));
+        response.end(fs.readFileSync(__dirname+'/lowfive.jpg'));
       }
       break;
     case 'GET':

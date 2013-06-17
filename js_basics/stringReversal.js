@@ -13,7 +13,7 @@ var stringReverse = function(string){
 
 stringReverse("hellooeoeoe");
 
-var stringReverse = function(number){
+var numberReverse = function(number){
   number = number.toString();
   number = number.split('');
   console.log(number);
@@ -26,4 +26,4 @@ var stringReverse = function(number){
   console.log(sum);
 };
 
-stringReverse(345345345345);
+numberReverse(345345345345);

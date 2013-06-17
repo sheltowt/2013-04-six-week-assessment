@@ -17,7 +17,7 @@
     };
 
     Task.prototype.complete = function() {
-      return this.destroy();
+      return this.set('completionStatus', true);
     };
 
     return Task;

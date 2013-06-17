@@ -34,4 +34,4 @@ var hash = function(key, max){
     letter = letter.charCodeAt(0);
     return (Math.pow(hash, letter) + letter) % max;
   });
-}
+};
